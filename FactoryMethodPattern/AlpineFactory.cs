@@ -17,7 +17,7 @@ namespace FactoryMethodPatter
             return modelName.ToLowerInvariant() switch
             {
                 "palo duro canyon ranger" => new MountainBike(),
-                "big bend" => new Recumbent(),
+                "galveston cruiser" => new Cruiser(),
                 _ => throw new Exception("Invalid bicycle model")
             };
         }

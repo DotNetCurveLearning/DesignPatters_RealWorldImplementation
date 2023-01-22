@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "FactoryMethodPattern"
+		},
+		{
+			"path": "FactoryMethodPattern.Tests"
 		}
 	]
 }
