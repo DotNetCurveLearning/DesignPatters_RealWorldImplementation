@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodPattern", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodPattern.Tests", "..\FactoryMethodPattern.Tests\FactoryMethodPattern.Tests.csproj", "{59A07A9E-B1DC-4231-AA55-6EFA7A58EB91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactoryPattern", "AbstractFactoryPattern", "{27592BD1-24FB-44C8-8326-B1E69C20D936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BicycleAbstractFactory", "..\BicycleAbstractFactory\BicycleAbstractFactory.csproj", "{FEA5A5B8-CE03-4647-8667-B5E055EB42A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{59A07A9E-B1DC-4231-AA55-6EFA7A58EB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59A07A9E-B1DC-4231-AA55-6EFA7A58EB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59A07A9E-B1DC-4231-AA55-6EFA7A58EB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA5A5B8-CE03-4647-8667-B5E055EB42A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA5A5B8-CE03-4647-8667-B5E055EB42A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA5A5B8-CE03-4647-8667-B5E055EB42A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA5A5B8-CE03-4647-8667-B5E055EB42A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEA5A5B8-CE03-4647-8667-B5E055EB42A7} = {27592BD1-24FB-44C8-8326-B1E69C20D936}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33A67DFD-E073-4E59-B81A-8AE24A5A135A}
