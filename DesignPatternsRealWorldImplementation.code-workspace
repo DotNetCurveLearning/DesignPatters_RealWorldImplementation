@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "BumbleBikesLibrary"
+		},
+		{
+			"path": "FactoryMethodPattern"
+		},
+		{
+			"path": "FactoryMethodPattern.Tests"
 		}
 	]
 }
