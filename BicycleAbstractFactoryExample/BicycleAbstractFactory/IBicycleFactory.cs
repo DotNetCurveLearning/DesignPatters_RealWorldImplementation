@@ -5,7 +5,7 @@ namespace BicycleAbstractFactory
 {
     public interface IBicycleFactory
     {
-        public IFrame CreateBicycleFrame();
-        public IHandlebars CreateBicycleHandleBars();
+        IFrame CreateBicycleFrame();
+        IHandlebars CreateBicycleHandleBars();
     }
 }

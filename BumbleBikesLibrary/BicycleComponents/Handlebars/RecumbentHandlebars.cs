@@ -1,6 +1,6 @@
 ﻿namespace BumbleBikesLibrary.BicycleComponents.BicycleFrame
 {
-    public abstract class RecumbentHandlebars : AbstractHandlebars
+    public class RecumbentHandlebars : AbstractHandlebars
     {
         public RecumbentHandlebars()
         {

@@ -1,6 +1,6 @@
 ﻿namespace BumbleBikesLibrary.BicycleComponents.BicycleFrame
 {
-    public abstract class CruiseHandlebars : AbstractHandlebars
+    public class CruiseHandlebars : AbstractHandlebars
     {
         public CruiseHandlebars()
         {
