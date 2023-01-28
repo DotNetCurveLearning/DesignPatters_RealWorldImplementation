@@ -30,6 +30,8 @@ namespace BumbleBikesLibrary
         SuspensionMounted = 8,
         Complete = 16
     }
+
+    [Flags]
     public enum SuspensionTypes
     {
         None = 0,
@@ -37,6 +39,7 @@ namespace BumbleBikesLibrary
         Front = 2,
         Hardtail = 4
     }
+
     /// <summary>
     /// This abstract class implements the IBicycle interface.
     /// This allow us to pass the interface around, which is more

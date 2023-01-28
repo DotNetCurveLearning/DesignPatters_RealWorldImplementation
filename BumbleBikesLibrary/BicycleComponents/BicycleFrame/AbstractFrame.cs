@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BumbleBikesLibrary.BicycleComponents.BicycleFrame
+﻿namespace BumbleBikesLibrary.BicycleComponents.BicycleFrame
 {
     public abstract class AbstractFrame : IFrame
     {
@@ -12,7 +6,7 @@ namespace BumbleBikesLibrary.BicycleComponents.BicycleFrame
         protected AbstractFrame()
         {
             ModelName= string.Empty;
-            SerialNumber = Guid.NewGuid().ToString();  
+            SerialNumber = Guid.NewGuid().ToString();
             Year = DateTime.Now.Year;
             BuildStatus = ManufacturingStatus.Specified;
         }
