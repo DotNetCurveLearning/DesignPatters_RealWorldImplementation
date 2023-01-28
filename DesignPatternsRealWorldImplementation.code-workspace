@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "FactoryMethodPattern.Tests"
+		},
+		{
+			"path": "BicycleAbstractFactoryExample"
 		}
 	]
 }

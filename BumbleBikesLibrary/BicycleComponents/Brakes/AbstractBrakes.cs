@@ -14,7 +14,7 @@ namespace BumbleBikesLibrary.BicycleComponents.Brakes
 
         public override string ToString()
         {
-            return $"Your brakes are {BrakeType.ToString(CultureInfo.InvariantCulture)}";
+            return $"Your brakes are {BrakeType}";
         }
     }
 }

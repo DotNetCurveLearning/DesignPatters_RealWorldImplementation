@@ -1,4 +1,4 @@
-﻿using BumbleBikesLibrary.BicycleComponents.BicycleFrame;
+using BumbleBikesLibrary.BicycleComponents.BicycleFrame;
 using BumbleBikesLibrary.BicycleComponents.Handlebars;
 
 namespace BicycleAbstractFactory
