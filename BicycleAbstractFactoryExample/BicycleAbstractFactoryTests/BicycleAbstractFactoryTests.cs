@@ -9,9 +9,10 @@ namespace BicycleAbstractFactoryTests;
 public class BicycleAbstractFactoryTests
 {
     private IBicycleFactory mountainBicycleFactory = new MountainBicycleFactory();
+    private IBicycleFactory roadBicycleFactory = new RoadBicycleFactory();
 
     [Fact]
-    public void WhenCreateBicycleFrameIsInvoked_ThenReturnsAnInstanceOfMountainBikeFrame()
+    public void WhenMountainBicycleFactoryCreateBicycleFrame_ThenReturnsAnInstanceOfMountainBikeFrame()
     {
         // arrange
 
@@ -24,7 +25,7 @@ public class BicycleAbstractFactoryTests
     }
 
     [Fact]
-    public void WhenCreateBicycleHandleBarsIsInvoked_ThenReturnsAnInstanceOfMountainBikeHandlebars()
+    public void WhenMountainBicycleFactoryCreateBicycleHandleBars_ThenReturnsAnInstanceOfMountainBikeHandlebars()
     {
         // arrange
 
@@ -36,5 +37,29 @@ public class BicycleAbstractFactoryTests
         result.Should().BeOfType<MountainBikeHandlebars>();
     }
 
+    [Fact]
+    public void WhenRoadBicycleFactoryCreateBicycleFrame_ThenReturnsAnInstanceOfMountainBikeFrame()
+    {
+        // arrange
 
+        // act
+        var result = roadBicycleFactory.CreateBicycleFrame();
+
+        // assert
+        result.Should().NotBeNull();
+        result.Should().BeOfType<RoadBikeFrame>();
+    }
+
+    [Fact]
+    public void WhenRoadBicycleFactoryCreateBicycleHandleBars_ThenReturnsAnInstanceOfMountainBikeHandlebars()
+    {
+        // arrange
+
+        // act
+        var result = roadBicycleFactory.CreateBicycleHandleBars();
+
+        // assert
+        result.Should().NotBeNull();
+        result.Should().BeOfType<RoadBikeHandlebars>();
+    }
 }
