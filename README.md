@@ -36,3 +36,19 @@ simple. We can add as many concrete factories we need.
 5. The final concrete products inherit from the abstract products. Each physical factory should make the frames and handlebars that are needed.
 
 ![Alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781803242736/files/image/B18605_Figure_4.12.jpg "Abstract Factory Pattern 1")
+
+## Builder pattern
+
+The Builder pattern consists of a **builder interface**, a **director** to control the creation process, and **concrete builders** based on the builder interface to produce specific products.
+
+![Alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781803242736/files/image/B18605_Figure_4.13.jpg "Builder Pattern 1")
+
+1. The first is the **IB**. Remember, this can be a literal interface or an abstract class. The use of an interface grants more flexibility. The **Builder** interface defines all the methods that will in a set of concrete builder classes.
+
+2. A **Director** class is created, which contains logic that defines the creation process in a step-by-step fashion.
+
+3. A set of concrete builder classes defines each type of object that can be created.
+
+4. Different products come out of the concrete builder classes, depending on the logic contained within the director.
+
+![Alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781803242736/files/image/B18605_Figure_4.14.jpg "Kitty's whiteboard implementation of the builder pattern")

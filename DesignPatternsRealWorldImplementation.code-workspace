@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "BicycleAbstractFactoryExample"
+		},
+		{
+			"path": "BuilderPattern"
 		}
 	],
 	"launch": {
