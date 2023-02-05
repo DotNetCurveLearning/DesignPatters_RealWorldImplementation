@@ -1,3 +1,24 @@
-﻿using static System.Console;
+﻿using BicycleAbstractFactory;
+using static System.Console;
 
 Console.WriteLine("Let's make some bicycles!");
+
+IBicycleFactory roadBikeFactory = new RoadBicycleFactory();
+
+var frame = roadBikeFactory.CreateBicycleFrame();
+var handlebars = roadBikeFactory.CreateBicycleHandleBars();
+
+Console.WriteLine("We just make a road bike!");
+Console.WriteLine(frame.ToString());
+Console.WriteLine(handlebars.ToString());
+
+IBicycleFactory mountainBikeFactory = new MountainBicycleFactory();
+
+frame = mountainBikeFactory.CreateBicycleFrame();
+handlebars = mountainBikeFactory.CreateBicycleHandleBars();
+
+Console.WriteLine("We just make a mountain bike!");
+Console.WriteLine(frame.ToString());
+Console.WriteLine(handlebars.ToString());
+
+
