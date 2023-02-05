@@ -1,67 +1,23 @@
-using System.Runtime.CompilerServices;
-
-namespace BumbleBikesLibrary
+﻿namespace BumbleBikesLibrary.BicycleComponents.BicycleFrame
 {
-    [Flags]
-    public enum BicycleGeometries
+    public abstract class AbstractFrame : IFrame
     {
-        None = 0,
-        Upright = 1,
-        Recumbent = 2
-    }
 
-    [Flags]
-    public enum BicyclePaintColors
-    {
-        None = 0,
-        Black = 1,
-        Red = 2,
-        White = 4,
-        Blue = 8
-    }
-
-    [Flags]
-    public enum ManufacturingStatus
-    {
-        None = 0,
-        Specified = 1,
-        FrameManufactured = 2,
-        Painted = 4,
-        SuspensionMounted = 8,
-        Complete = 16
-    }
-
-    [Flags]
-    public enum SuspensionTypes
-    {
-        None = 0,
-        Full = 1,
-        Front = 2,
-        Hardtail = 4
-    }
-
-    /// <summary>
-    /// This abstract class implements the IBicycle interface.
-    /// This allow us to pass the interface around, which is more
-    /// flexible than using this base class.
-    /// </summary>
-    public abstract class Bicycle : IBicycle
-    {
-        public string ModelName { get; set; }
-        public int Year { get; }
-        public string SerialNumber { get; set; }
-        public BicyclePaintColors Color { get; set; }
-        public BicycleGeometries Geometry { get; set; }
-        public SuspensionTypes Suspension { get; set; }
-        public ManufacturingStatus BuildStatus { get; set; }
-
-        public Bicycle()
+        protected AbstractFrame()
         {
-            ModelName = string.Empty; // will be filled in sublcass constructor
+            ModelName= string.Empty;
             SerialNumber = Guid.NewGuid().ToString();
             Year = DateTime.Now.Year;
             BuildStatus = ManufacturingStatus.Specified;
         }
+        public string ModelName { get; set; }
+        public int Year { get; }
+        public string SerialNumber { get; }
+        public BicycleGeometries Geometry { get; set; }
+        public BicyclePaintColors Color { get; set; }
+        public SuspensionTypes Suspension { get; set; }
+        public ManufacturingStatus BuildStatus { get; set; }
+
         public void Build()
         {
             Console.WriteLine($"Manufacturing a {Geometry.ToString()} frame...");
